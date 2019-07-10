@@ -1,0 +1,14 @@
+<p>datapage works!</p>
+
+<!-- <button mat-button [matMenuTriggerFor]="menu">Menu</button> -->
+
+search: <input value="text" [(ngModel)]='add'>
+<button (click) ='onclick()'>Search</button>
+
+<div *ngFor="let data of val">
+    <p> {{data['created_at']}}</p>
+</div>
+
+<div *ngFor="let data of val2">
+    <p> {{data['text']}}</p>
+</div>
